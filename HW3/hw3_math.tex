@@ -1,0 +1,123 @@
+%% AMS-LaTeX Created with the Wolfram Language for Students - Personal Use Only : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*} \text{These} \text{are} \text{the} \text{support} \text{vectors}, \text{one} \text{red} \text{and} \text{one} \text{blue}
+\text{with} +1 \& -1 \text{respectivly}}\\
+\pmb{\text{*)}}\\
+\pmb{\text{r1}=\{1,1\}}\\
+\pmb{\text{b1}=\{0,1\}}\\
+\pmb{\text{b2}=\{1,0\}}\\
+\pmb{w = \{\text{w1},\text{w2}\}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{1,1\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{0,1\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{1,0\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{\text{w1},\text{w2}\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*} \text{we} \text{have} \text{to} \text{solve} \text{for} w \text{and} b \text{subject} \text{to}: \text{y$\_$i}(w.\text{x$\_$i}+b)=1
+\text{*)}}\\
+\pmb{\text{(*} \text{We} \text{have} 3 \text{unknowns} \text{w1},\text{w2} \text{and} b \text{and} \text{we} \text{have} 3 }\\
+\pmb{\text{support} \text{vectors} \text{so} \text{this} \text{is} \text{solving} a \text{system} \text{of} \text{equations} \text{*)}}\\
+\pmb{\text{Solve}[1*(w.\text{r1} + b)==1\&\&-1*(w.\text{b1} + b)==1\&\&-1*(w.\text{b2} + b)==1,\{\text{w1},\text{w2},b\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{\{\text{w1}\to 2,\text{w2}\to 2,b\to -3\}\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*}\text{So} \text{we} \text{have} \text{the} \text{equation} \text{of} \text{the} \text{plane} \text{given} \text{by} w.x+b=0
+\text{*)}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{wmin} = \{2,2\}}\\
+\pmb{b=-3}\\
+\pmb{\text{xi}=\left\{x_1,x_2\right\}}\\
+\pmb{\text{wmin}.\text{xi} + b ==0}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{2,2\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-3\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{x_1,x_2\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-3+2 x_1+2 x_2==0\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*The maximum margin D is then as follows *)}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{f[\text{x$\_$}]=\text{Abs}[\text{wmin}.x+b]/\text{Norm}[\text{wmin}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{\text{Abs}[-3+\{2,2\}.x]}{2 \sqrt{2}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{f[\text{r1}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{1}{2 \sqrt{2}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{f[\text{b1}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{1}{2 \sqrt{2}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{f[\text{b2}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{1}{2 \sqrt{2}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*} \text{This} \text{is} \text{the} \text{expected} \text{result} \text{based} \text{on} \text{our} \text{evaluation} \text{that}
+\text{the} \text{hyperplane} }\\
+\pmb{\text{lies} \text{evenly} \text{between} \text{these} \text{points}, }\\
+\pmb{\text{so} \text{all} 3 \text{maximize} \text{the} \text{margin} \text{and} \text{it} \text{must} \text{be} \text{so} \text{or} \text{else} \text{we}
+\text{have} \text{not} \text{maximized} }\\
+\pmb{\text{the} \text{margin}! \text{*)}}\)
+\end{doublespace}
+
+\end{document}
